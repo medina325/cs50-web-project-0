@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+             div#header
+            {
+                height: 72px;
+                background-color: rgb(240, 240, 240);
+                margin: -20px;
+                margin-right: 2px;
+                padding-left: 20px;
+            }
+            div.body
+            {
+                padding-left: 40px;
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <img src="google_logo.svg" alt="Google Logo" width="100px" height="90px">
+        </div>
+
+        <a href="index.html">Google Search</a>
+        
+        <div class="body">
+            <h2 id="adv_srch_header">Advanced Search</h2>
+        </div>    
+        
+        <hr>
+        
+        <div class="body">
+            <form action="https://www.google.com/search">
+                Find pages with...<br> 
+                all these words: <input type="search" name="as_q"> Type the important words: tri-colour rat terrier<br>
+                this exact word or phrase: <input type="search" name="as_epq"> Put exact words in quotes: "rat terrier"<br>
+                any of these words: <input type="search" name="as_oq"> Type OR between all the words you want: miniature OR standard<br>
+                none of these words: <input type="search" name="as_eq"> Put a minus sign just before words that you don't want: -rodent, -"Jack Russel"<br>
+                numbers raging from: <input type="search" name="as_nlo"> Put two full stops between the numbers and add a unit of measurement: 10...35 kg, £300...£500, 2010...2011<br>
+                to <input type="search" name="as_nhi"><br>
+                <input type="submit" class="adv_button" value="Advanced Search">
+            </form>
+        </div>
+    </body>
+</html>
