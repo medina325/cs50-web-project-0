@@ -3,47 +3,88 @@
     <head>
         <title>Google Advanced Search</title>
         <link rel="stylesheet" href="style.css">
-
-        <style>
-             div#header
-            {
-                height: 72px;
-                background-color: rgb(240, 240, 240);
-                margin: -20px;
-                margin-right: 2px;
-                padding-left: 20px;
-            }
-            div.body
-            {
-                padding-left: 40px;
-                padding-top: 10px;
-            }
-        </style>
+        <link rel="icon" href="Google__G__Logo.png">
     </head>
     <body>
+        
         <div id="header">
             <img src="google_logo.svg" alt="Google Logo" width="100px" height="90px">
         </div>
-
         <a href="index.html">Google Search</a>
-        
-        <div class="body">
+        <div>
             <h2 id="adv_srch_header">Advanced Search</h2>
         </div>    
         
-        <hr>
+        <hr style="opacity: .25;">
+
+        <!-- I find it curious the names of classes and ids that actual web pages use (including google), so in this case 
+        FPW stands for Find Pages With-->
+        <p id="FPW"> 
+            Find pages with...
+        </p>
+
+        <!-- I don't really like the way this is being organized
+        but let's see what's gonna happen -->
+        <form id="adv_form_grid" action="https://www.google.com/search">
+            <div class="adv_grid_item">
+                <label class="adv_label">all these words:</label>
+            </div>
+            <div class="adv_grid_item">
+                <input class="adv_input" type="search" name="as_q">
+            </div>
+            <div class="adv_grid_item">
+                <label class="adv_label">Type the important words: tri-colour rat terrier</label><br>
+            </div>
+
+            <div class="adv_grid_item">
+                <label class="adv_label">this exact word or phrase:</label>
+            </div>
+            <div class="adv_grid_item">
+                <input class="adv_input" type="search" name="as_epq">
+            </div>
+            <div>
+                <label class="adv_label">Put exact words in quotes: "rat terrier"</label>
+            </div>
+
+            <div class="adv_grid_item">
+                <label class="adv_label">any of these words:</label>
+            </div>
+            <div>
+                <input class="adv_input" type="search" name="as_oq">
+            </div>
+            <div>
+                <label class="adv_label">Type OR between all the words you want: miniature OR standard</label>
+            </div>
+
+            <div class="adv_grid_item">
+                <label class="adv_label">none of these words:</label>
+            </div>
+            <div>
+                <input class="adv_input" type="search" name="as_eq">
+            </div>
+            <div>
+                <label class="adv_label">Put a minus sign just before words that you don't want: -rodent, -"Jack Russel"</label>
+            </div>
+
+            
+            <div class="adv_grid_item">
+                <label class="adv_label">numbers raging from:</label>
+            </div>
+            <div class="adv_grid_item">
+                <input class="adv_input_NRF" type="text" name="as_nlo">
+            </div>
+            <div class="adv_grid_item" style="margin-left: -100px;">
+                <label class="adv_label">to</label>
+            </div>
+            <div class="adv_grid_item">
+                <input class="adv_input" type="search" name="as_nhi">
+            </div>
+                
+            <div class="rule"></div>
+
+            <input type="submit" class="adv_button" value="Advanced Search">
+        </form>
         
-        <div class="body">
-            <form action="https://www.google.com/search">
-                Find pages with...<br> 
-                all these words: <input type="search" name="as_q"> Type the important words: tri-colour rat terrier<br>
-                this exact word or phrase: <input type="search" name="as_epq"> Put exact words in quotes: "rat terrier"<br>
-                any of these words: <input type="search" name="as_oq"> Type OR between all the words you want: miniature OR standard<br>
-                none of these words: <input type="search" name="as_eq"> Put a minus sign just before words that you don't want: -rodent, -"Jack Russel"<br>
-                numbers raging from: <input type="search" name="as_nlo"> Put two full stops between the numbers and add a unit of measurement: 10...35 kg, £300...£500, 2010...2011<br>
-                to <input type="search" name="as_nhi"><br>
-                <input type="submit" class="adv_button" value="Advanced Search">
-            </form>
-        </div>
+        
     </body>
 </html>
