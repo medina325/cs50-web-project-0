@@ -19,34 +19,33 @@
 
         <!-- I find it curious the names of classes and ids that actual web pages use (including google), so in this case 
         FPW stands for Find Pages With-->
-        <p id="FPW"> 
-            Find pages with...
-        </p>
-
+        
+        <h1 class="FPW">Find pages with...</h1>
+        
         <!-- I don't really like the way this is being organized
         but let's see what's gonna happen -->
         <form id="adv_form_grid" action="https://www.google.com/search">
-            <div class="adv_grid_item">
+            <div>
                 <label class="adv_label">all these words:</label>
             </div>
-            <div class="adv_grid_item">
+            <div>
                 <input class="adv_input" type="search" name="as_q">
             </div>
-            <div class="adv_grid_item">
+            <div>
                 <label class="adv_label">Type the important words: tri-colour rat terrier</label><br>
             </div>
 
-            <div class="adv_grid_item">
+            <div>
                 <label class="adv_label">this exact word or phrase:</label>
             </div>
-            <div class="adv_grid_item">
+            <div>
                 <input class="adv_input" type="search" name="as_epq">
             </div>
             <div>
                 <label class="adv_label">Put exact words in quotes: "rat terrier"</label>
             </div>
 
-            <div class="adv_grid_item">
+            <div>
                 <label class="adv_label">any of these words:</label>
             </div>
             <div>
@@ -56,7 +55,7 @@
                 <label class="adv_label">Type OR between all the words you want: miniature OR standard</label>
             </div>
 
-            <div class="adv_grid_item">
+            <div>
                 <label class="adv_label">none of these words:</label>
             </div>
             <div>
@@ -66,25 +65,44 @@
                 <label class="adv_label">Put a minus sign just before words that you don't want: -rodent, -"Jack Russel"</label>
             </div>
 
-            
-            <div class="adv_grid_item">
+            <div>
                 <label class="adv_label">numbers raging from:</label>
             </div>
-            <div class="adv_grid_item">
-                <input class="adv_input_NRF" type="text" name="as_nlo">
-            </div>
-            <div class="adv_grid_item" style="margin-left: -100px;">
+            <div >
+                <input class="adv_input_NRF" type="search" name="as_nlo">
                 <label class="adv_label">to</label>
+                <input class="adv_input_NRF" type="search" name="as_nhi">
             </div>
-            <div class="adv_grid_item">
-                <input class="adv_input" type="search" name="as_nhi">
+            <div>
+                <label class="adv_label">Put two full stops between the numbers and add a unit of measurement: 10...35 kg, £300...£500, 2010...2011</label>
             </div>
-                
-            <div class="rule"></div>
 
-            <input type="submit" class="adv_button" value="Advanced Search">
+            <label class="adv_label" style="font-size: 16px;">Then narrow your results by...</label>
+            <div></div><div></div>
+
+            <div>
+                <label class="adv_label">language:</label>
+            </div>
+            <div>
+                <input class="adv_list_of_options" name="country" list="countries" placeholder="any language">
+                <datalist id="countries"> <!-- Used for auto complete list of options-->
+                    <option value="any language">
+                    <option value="Afrikaans">
+                    <option value="Arabic">
+                    <option value="Armenian">
+                    <option value="Belarusian">
+                    <option value="Bulgarian">
+                    <option value="Catalan">
+                    <option value="Chinese (Simplified)">
+                    <option value="Chinese (Tradi ......................">
+
+                    <option value="Afrikaans">
+                    <option value="Afrikaans">
+                    <option value="Afrikaans">
+                </datalist>
+            </div>
         </form>
-        
+        <input type="submit" class="adv_button" value="Advanced Search" form="adv_form_grid">
         
     </body>
 </html>

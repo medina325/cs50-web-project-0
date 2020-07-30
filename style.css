@@ -81,13 +81,13 @@ h2#adv_srch_header
     padding-top: 10px;
     padding-bottom: 10px;
     color: rgb(209, 54, 54);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: arial,sans-serif;
     font-weight: 100;
     font-size: 20px;
 }
 
 /* Body of the page*/
-#FPW{
+.FPW{
     padding-left: 38px;
     padding-top: 30px;
     font-family: arial,sans-serif;
@@ -95,34 +95,41 @@ h2#adv_srch_header
     font-weight: 100;
 }
 #adv_form_grid{
-    display: grid;
-    grid-template-columns: 160px 560px auto;
-    column-gap: 15px;
-    row-gap: 13px;
-    padding-left: 38px;
+    padding-left: 23px;
     padding-top: 10px;
-    
-    
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 180px 560px auto;
+    column-gap: 15px;
+    row-gap: 15px;
 }
-/*
-.adv_grid_item{
-}
-*/
-.adv_input, .adv_input_NRF{
-    margin-top: -10px; 
+.adv_input, .adv_input_NRF, .adv_list_of_options{ 
     width: 100%;    
     height: 30px;
-    border: 1px solid rgba(220, 220, 220, 1);
+    border: 1px solid rgb(209, 209, 209);
 }
-.adv_input:focus{
-    box-shadow: 0 0 2px 2px rgba(106, 108, 238, 0.993);
+.adv_input:focus, .adv_input_NRF:focus{
+    outline: none;
+    border: 1px solid rgba(106, 108, 238, 0.993);
+    padding: 10px;
+    box-shadow: 0px 1px 3px -1px rgb(107, 107, 107) inset;
 }
 .adv_label{
     font-family: arial,sans-serif;
     font-size: 13px;
+    margin: 15px;
 }
 .adv_input_NRF{
-    width: 50%;
+    width: 45.5%;
+}
+.adv_list_of_options{
+    background-color: rgb(243, 243, 243);
+    font-weight: 700;
+    padding-left: 20px;
+}
+.adv_list_of_options::placeholder{
+    color: black;
+    opacity: .75;
 }
 
 /* Advanced search button*/
@@ -132,8 +139,8 @@ h2#adv_srch_header
     height: 30px;
     width: 120px;
     font-size: 11px;
-    font-weight: bold;
-    margin: 10px 1000px;   
+    font-weight: bold;  
+    margin-left: 650px;
 }
 .adv_button:hover{
     background-color: rgba(90, 142, 239, 0.993);
