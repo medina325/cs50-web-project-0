@@ -53,11 +53,11 @@ input.search:hover{
     box-shadow: 0px 0px 4px 1px #cccccc;
 }
 
-a:hover{
+.link_top_right:hover{
     text-decoration: underline;
     color: rgb(129, 129, 129);
 }
-a{
+.link_top_right{
     margin-left: 1170px;
     color: rgba(0,0,0,0.87);
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -68,6 +68,7 @@ a{
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /*All style definied below are applied only to google_advanced_search.html page*/
 
+/* Page header*/
 div#header{
     height: 72px;
     background-color: rgb(240, 240, 240);
@@ -93,6 +94,7 @@ h2#adv_srch_header
     font-family: arial,sans-serif;
     font-size: 16px;
     font-weight: 100;
+    cursor: text;
 }
 #adv_form_grid{
     padding-left: 23px;
@@ -116,10 +118,16 @@ h2#adv_srch_header
     padding: 10px;
     box-shadow: 0px 1px 3px -1px rgb(107, 107, 107) inset;
 }
-.adv_label{
+.adv_label_left, .link_left_labels{
     font-family: arial,sans-serif;
     font-size: 13px;
     margin: 15px;
+}
+.adv_label_right{
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    cursor: text;
+    opacity: .9;
 }
 .adv_input_NRF{
     width: 45.5%;
@@ -130,14 +138,35 @@ h2#adv_srch_header
     font-weight: bolder;
     font-size: 11px;
     padding-left: 10px;
-    height: 20px;
+    height: 27px;
     width: 555px;
+    border-radius: 3px;
 }
 .adv_list_of_options::placeholder{
     color: black;
     opacity: .85;
 }
-
+input::-webkit-calendar-picker-indicator{
+    opacity: .5;
+    height: 5px;
+ }
+.adv_list_of_options:hover{
+    background-color: rgb(245, 245, 245, 0.945);
+    border: 1px solid rgba(134, 133, 133, 0.55);
+    cursor: default;
+}
+.adv_list_of_options:focus{
+    background-color: rgba(218, 216, 216, 0.55);
+    outline: none;
+    border: 1px solid rgba(106, 108, 238, 0.993);
+}
+.link_left_labels{
+    text-decoration: none;
+    color: rgba(4, 34, 204, 0.993);
+}
+.link_left_labels:hover{
+    text-decoration: underline;
+}
 /* Advanced search button*/
 .adv_button{
     background-color: rgba(94, 146, 243, 0.993);
