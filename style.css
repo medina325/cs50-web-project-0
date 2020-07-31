@@ -99,13 +99,15 @@ h2#adv_srch_header
     padding-top: 10px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 180px 560px auto;
+    grid-template-columns: 180px 574px auto;
     column-gap: 15px;
-    row-gap: 15px;
+    row-gap: 14px;
+    /*background-color: lightseagreen;
+    border: 2px solid black;*/
 }
-.adv_input, .adv_input_NRF, .adv_list_of_options{ 
+.adv_input, .adv_input_NRF{ 
     width: 100%;    
-    height: 30px;
+    height: 28px;
     border: 1px solid rgb(209, 209, 209);
 }
 .adv_input:focus, .adv_input_NRF:focus{
@@ -123,13 +125,17 @@ h2#adv_srch_header
     width: 45.5%;
 }
 .adv_list_of_options{
+    border: 1px solid rgb(209, 209, 209);
     background-color: rgb(243, 243, 243);
-    font-weight: 700;
-    padding-left: 20px;
+    font-weight: bolder;
+    font-size: 11px;
+    padding-left: 10px;
+    height: 20px;
+    width: 555px;
 }
 .adv_list_of_options::placeholder{
     color: black;
-    opacity: .75;
+    opacity: .85;
 }
 
 /* Advanced search button*/
