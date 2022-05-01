@@ -33,7 +33,6 @@ Here are the final results for the project. The figures below aim to demonstrate
 ### Google Search
 
 ![google search](/examples/index.jpg)
-<img alt="google search" src="/examples/index.jpg" width="50px" height="30px" >
 
 ### Google Images
 
